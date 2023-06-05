@@ -37,7 +37,7 @@ body{
 
 .right{
     width:30vh;
-    height:50vh;
+    height:45vh;
 }
 h3,p{
     color:hsl(241, 100%, 89%);
@@ -54,17 +54,65 @@ p{
 
 
 .right{
+    width:25vh;
     padding-left:30px;
-
+    display:flex;
+    flex-direction: column;
 }
 
-ul{
-    border:1px solid blue;
+.reaction,.memory,.visual,.verbal{
+    display:flex;
+    margin: 5px;
+    border-radius:10px;
 }
-li{
-    border:1px solid black;
-    margin:20px;
-    padding:10px;
-    list-style-position: initial;
+
+.reaction{
+    background-color: hsl(0, 100%, 93%);
+}
+.reaction p{
+    color: hsl(0, 100%, 67%);
+}
+.memory{
+    background-color: hsl(39, 100%, 93%);
+}
+.memory p{
+    color: hsl(39, 100%, 56%);
+}
+.verbal{
+    background-color: hsl(166, 100%, 93%);
+}
+.verbal p{
+    color: hsl(166, 100%, 37%);
+}
+.visual{
+    background-color: hsl(234, 85%, 93%);
+}
+.visual p{
+    color: hsl(234, 85%, 45%)
+}
+
+#name{
+    margin-right:50px;
+}
+
+button{
+    box-sizing:border-box;
+    margin: 0 auto;
+    width:80%;
+    margin-top:40px;
+    color:white;
+    background-color: hsl(224, 30%, 27%);
+    padding:15px;
+    border-radius:30px;
+    font-weight: bold;;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: hsl(234, 85%, 45%);
+}
+
+
+@media only screen and (max-width: 600px) {
     
 }
